@@ -1,0 +1,30 @@
+name: Publish package
+author: etnet-raymondlin
+description: Automatically publish new versions to registry
+
+inputs:
+  commit_pattern:
+    description: The pattern that matches version update commits.
+    required: false
+  tag_name:
+    description: The name of the tag that you want to create for the version.
+    required: false
+  tag_message:
+    description: The message of the tag that you want to create for the version.
+    required: false
+  install_command:
+    description: The command used for install package.
+    required: false
+  build_command:
+    description: The command used for build package.
+    required: false
+  publish_command:
+    description: The command used for publish package.
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
+
+branding:
+  icon: package
+  color: blue
