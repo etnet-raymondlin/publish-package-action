@@ -9,3 +9,6 @@ echo
 ls -la /github/workflow
 
 ls -la /github/workspace
+
+
+exit 1
