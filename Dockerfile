@@ -8,6 +8,8 @@ LABEL "com.github.actions.color"="blue"
 
 RUN apk add --no-cache jq
 
+USER root
+
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
