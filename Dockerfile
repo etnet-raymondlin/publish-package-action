@@ -8,6 +8,6 @@ LABEL "com.github.actions.color"="blue"
 
 RUN apk add --no-cache jq
 
-COPY start.sh /
+ADD entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT [ "/start.sh" ]
+ENTRYPOINT ["/entrypoint.sh"]
