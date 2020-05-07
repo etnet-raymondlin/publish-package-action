@@ -10,4 +10,4 @@ RUN apk add --no-cache jq
 
 COPY start.sh /
 
-ENTRYPOINT [ "start.sh" ]
+ENTRYPOINT [ "/start.sh" ]
